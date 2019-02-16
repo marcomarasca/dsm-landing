@@ -1,3 +1,5 @@
+@import '~src/styles/variables';
+
 header {
   text-align: center;
   background: rgba(0,0,0,0.02);
@@ -8,5 +10,9 @@ header {
 
   .fas {
     color: #1e90ff;
+  }
+
+  h1 {
+    font-weight: $font-weight-base;
   }
 }

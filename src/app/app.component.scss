@@ -1,0 +1,38 @@
+@import '~bootstrap/scss/bootstrap-grid';
+@import '~src/styles/variables';
+@import '~src/styles/mixins';
+
+.content {
+  @extend .container;
+
+  .row {
+    margin-right: 0;
+    margin-left: 0;
+
+    > .col,
+    > [class*="col-"] {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+
+  app-button {
+    min-width: 10em;
+    height: 10em;
+    transition: height .3s, background-color .3s;
+  }
+
+  app-button:hover {
+    height: 11em;
+  }
+
+}
+
+@for $i from 1 through length($btn-colors) {
+  .content app-button:nth-child(#{length($btn-colors)}n+#{$i}) {
+    @include color-btn(nth($btn-colors, $i));
+  }
+}
+
+
+
