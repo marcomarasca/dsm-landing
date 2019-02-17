@@ -16,16 +16,6 @@
     }
   }
 
-  app-button {
-    min-width: 10em;
-    height: 10em;
-    transition: height .3s, background-color .3s;
-  }
-
-  app-button:hover {
-    height: 11em;
-  }
-
 }
 
 @for $i from 1 through length($btn-colors) {
