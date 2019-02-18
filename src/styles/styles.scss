@@ -5,14 +5,14 @@
 @import '~@fortawesome/fontawesome-free/scss/solid';
 @import '~videogular2/fonts/videogular.css';
 
-.bg:after {
-  content: "";
-  background-image: url("/assets/background.jpg");
+.bg {
+  content: ' ';
+  background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(0, 0, 0, 0.6)), url("/assets/background.jpg");
   /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 0.4;
+  background-attachment: fixed;
   top: 0;
   left: 0;
   bottom: 0;
