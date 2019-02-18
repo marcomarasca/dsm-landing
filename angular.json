@@ -29,7 +29,7 @@
             "styles": [
               "src/styles/styles.scss"
             ],
-            "scripts": [],
+            "scripts": ["./node_modules/hls.js/dist/hls.light.min.js"],
             "es5BrowserSupport": true
           },
           "configurations": {
