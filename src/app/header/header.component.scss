@@ -10,6 +10,11 @@ header {
 
   .fas {
     color: $icon-color;
+    transition: color 0.3s;
+
+    &:hover {
+      color: rgba(188, 202, 214, 0.714);
+    }
   }
 
   h1 {
