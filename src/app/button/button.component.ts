@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Application } from '../application';
+import { IApplication } from '../application';
 
 @Component({
   selector: 'app-button',
@@ -8,7 +8,7 @@ import { Application } from '../application';
 })
 export class ButtonComponent implements OnInit {
 
-  @Input() app: Application;
+  @Input() app: IApplication;
 
   constructor() { }
 
