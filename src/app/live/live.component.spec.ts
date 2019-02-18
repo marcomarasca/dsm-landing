@@ -1,5 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { VgCoreModule } from 'videogular2/core';
+import { VgStreamingModule } from 'videogular2/streaming';
 import { LiveComponent } from './live.component';
 
 describe('LiveComponent', () => {
@@ -8,6 +9,7 @@ describe('LiveComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
+      imports: [VgCoreModule, VgStreamingModule],
       declarations: [ LiveComponent ]
     })
     .compileComponents();

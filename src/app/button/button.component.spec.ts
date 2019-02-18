@@ -1,6 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { ButtonComponent } from './button.component';
+import { RouterTestingModule } from '@angular/router/testing';
 
 describe('ButtonComponent', () => {
   let component: ButtonComponent;
@@ -8,6 +8,7 @@ describe('ButtonComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
+      imports: [ RouterTestingModule ],
       declarations: [ ButtonComponent ]
     })
     .compileComponents();
@@ -16,6 +17,11 @@ describe('ButtonComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(ButtonComponent);
     component = fixture.componentInstance;
+    component.app = {
+      name: 'Test App',
+      icon: 'test',
+      route: 'test'
+    };
     fixture.detectChanges();
   });
 

@@ -87,7 +87,7 @@
             "styles": [
               "src/styles/styles.scss"
             ],
-            "scripts": [],
+            "scripts": ["./node_modules/hls.js/dist/hls.light.min.js"],
             "assets": [
               "src/favicon.ico",
               "src/assets"
