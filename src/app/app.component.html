@@ -1,9 +1,7 @@
 <app-header></app-header>
 <main role="main" class="flex-shrink-0">
   <div class="content mt-3 mb-3">
-    <div class="row justify-content-center">
-      <app-button class="flex-grow-0 col-6 col-sm" *ngFor="let app of apps" [app]="app"></app-button>
-    </div>
+    <router-outlet #routerOutlet="outlet"></router-outlet>
   </div>
 </main>
 <app-footer class="mt-auto"></app-footer>

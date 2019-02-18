@@ -1,3 +1,5 @@
+import {environment} from '../environments/environment';
+
 export class Application {
   name: string;
   icon: string;
@@ -5,9 +7,10 @@ export class Application {
 }
 
 export const APP_LIST = [
-  {name: 'Photo', icon: 'images', url: 'https://hedgycloud.synology.me/photo'},
-  {name: 'Files', icon: 'file-code', url: 'https://hedgycloud.synology.me/file'},
-  {name: 'Video', icon: 'video', url: 'https://hedgycloud.synology.me/video'},
-  {name: 'Download', icon: 'download', url: 'https://hedgycloud.synology.me/download'},
-  {name: 'Settings', icon: 'cogs', url: 'https://hedgycloud.synology.me:5001'}
+  {name: 'Live', icon: 'tv', route: '/live'},
+  {name: 'Photo', icon: 'images', route: 'redirect', url: environment.baseUrl + '/photo'},
+  {name: 'Files', icon: 'file-code', route: 'redirect', url: environment.baseUrl + '/file'},
+  {name: 'Video', icon: 'video', route: 'redirect', url: environment.baseUrl + '/video'},
+  {name: 'Download', icon: 'download', route: 'redirect', url: environment.baseUrl + '/download'},
+  {name: 'Admin', icon: 'cogs', route: 'redirect', url: environment.baseUrl + ':5001'}
 ];

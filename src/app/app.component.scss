@@ -1,6 +1,4 @@
 @import '~bootstrap/scss/bootstrap-grid';
-@import '~src/styles/variables';
-@import '~src/styles/mixins';
 
 .content {
   @extend .container;
@@ -16,12 +14,6 @@
     }
   }
 
-}
-
-@for $i from 1 through length($btn-colors) {
-  .content app-button:nth-child(#{length($btn-colors)}n+#{$i}) {
-    @include color-btn(nth($btn-colors, $i));
-  }
 }
 
 
