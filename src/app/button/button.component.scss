@@ -21,7 +21,7 @@ a {
   font-weight: $font-weight-base;
 
   &:not(.disabled):hover {
-    color: #e9e9e9;
+    color: $icon-color-hover;
     .icon + span {
       margin-top: 3.1em;
       transition: margin 0.3s;
@@ -52,6 +52,12 @@ a {
     right: 0;
     left: 0;
     top: 1em;
+  }
+
+  .icon-alert {
+    position: absolute;
+    right: 0.3em;
+    top: 0.3em;
   }
 
 }
