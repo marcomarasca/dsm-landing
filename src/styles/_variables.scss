@@ -2,6 +2,8 @@ $fa-font-path: '~@fortawesome/fontawesome-free/webfonts';
 $font-weight-base: 300;
 $text-muted: #ffffff;
 $body-color: #1b3647;
+$body-bg-overlay: linear-gradient(rgba(255, 255, 255, 0.6), rgba(0, 0, 0, 0.6));
+$body-bg-image: url("/assets/background.jpg");
 $header-bg-color: rgba(216, 216, 216, 0.341);
 $icon-color: #ffffff;
 $icon-color-hover: #e9e9e9;
