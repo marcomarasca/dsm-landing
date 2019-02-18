@@ -22,9 +22,9 @@ export class RedirectGuard implements CanActivate {
 }
 
 const appRoutes: Routes = [
-  { path: '', component: HomeComponent, pathMatch: 'full' },
-  { path: 'live', component: LiveComponent },
-  { path: 'redirect', canActivate: [RedirectGuard], component: RedirectGuard },
+  { path: '', component: HomeComponent, pathMatch: 'full', data: { name: 'Home'} },
+  { path: 'live', component: LiveComponent, data: { name: 'Live'} },
+  { path: 'redirect', canActivate: [RedirectGuard], component: RedirectGuard, data: { name: 'Redirect' } },
   { path: '**', redirectTo: '', pathMatch: 'full' }
 ];
 

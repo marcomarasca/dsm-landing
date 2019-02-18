@@ -1,15 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import {environment} from '../../environments/environment';
 
 @Component({
   selector: 'app-live',
   templateUrl: './live.component.html',
   styleUrls: ['./live.component.scss']
 })
-export class LiveComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+export class LiveComponent {
+  stream: string = environment.streamUrl;
 }
