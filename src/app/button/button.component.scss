@@ -1,4 +1,5 @@
 @import '~src/styles/variables';
+@import '~bootstrap/scss/bootstrap-grid';
 
 :host {
 
@@ -6,8 +7,12 @@
   height: 10em;
   transition: height .3s, background-color .3s, opacity .3s;
 
-  &:not(.disabled):hover {
-    height: 11em;
+  @include media-breakpoint-up(lg) {
+
+    &:not(.disabled):hover {
+      height: 11em;
+    }
+
   }
 
   &.disabled {
@@ -27,9 +32,12 @@ a {
 
   &:not(.disabled):hover {
     color: $icon-color-hover;
-    .icon + span {
-      margin-top: 3.1em;
-      transition: margin 0.3s;
+
+    @include media-breakpoint-up(lg) {
+      .icon + span {
+        margin-top: 3.1em;
+        transition: margin 0.3s;
+      }
     }
   }
 
