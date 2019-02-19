@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -10,6 +11,7 @@ import { LiveComponent } from './live/live.component';
 import { HomeComponent } from './home/home.component';
 import { VgCoreModule } from 'videogular2/core';
 import { VgStreamingModule } from 'videogular2/streaming';
+import { StreamService } from './live/stream.service';
 
 @NgModule({
   declarations: [
@@ -22,11 +24,12 @@ import { VgStreamingModule } from 'videogular2/streaming';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
     VgCoreModule,
     VgStreamingModule
   ],
-  providers: [],
+  providers: [StreamService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -5,7 +5,9 @@
 export const environment = {
   production: false,
   baseUrl: 'https://hedgycloud.synology.me',
-  streamUrl: 'http://localhost:8080/hls/gopro.m3u8'
+  streamUrl: 'http://localhost:8080/hls/gopro.m3u8',
+  pingTimeout: 2000,
+  pingFrequency: 3000
 };
 
 /*

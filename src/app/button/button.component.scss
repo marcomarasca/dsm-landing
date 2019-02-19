@@ -4,11 +4,16 @@
 
   min-width: 10em;
   height: 10em;
-  transition: height .3s, background-color .3s;
+  transition: height .3s, background-color .3s, opacity .3s;
 
   &:not(.disabled):hover {
     height: 11em;
   }
+
+  &.disabled {
+    opacity: 0.7;
+  }
+
 }
 
 a {
@@ -29,7 +34,7 @@ a {
   }
 
   &.disabled {
-    opacity: 0.2;
+    opacity: 1;
   }
 
   span {
@@ -39,7 +44,7 @@ a {
   .icon {
     display: block;
     padding: 1.4em 0;
-    background: rgba(255,255,255,0.1);
+    background: $icon-bg-color;
   }
 
   .icon + span {

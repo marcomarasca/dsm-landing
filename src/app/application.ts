@@ -9,7 +9,7 @@ export interface IApplication {
 }
 
 export const APP_LIST: IApplication[] = [
-  { name: 'Live', icon: 'tv', route: '/live' },
+  { name: 'Live', icon: 'tv', route: '/live', disabled: true },
   { name: 'Photo', icon: 'images', route: 'redirect', url: environment.baseUrl + '/photo' },
   { name: 'Files', icon: 'file-code', route: 'redirect', url: environment.baseUrl + '/file' },
   { name: 'Video', icon: 'video', route: 'redirect', url: environment.baseUrl + '/video' },
