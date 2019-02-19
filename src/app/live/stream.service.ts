@@ -10,11 +10,17 @@ export class StreamService {
 
   isAlive: BehaviorSubject<boolean> = new BehaviorSubject(false);
 
-  constructor(private pingService: PingService) {
-    // Creates a timer to ping every x seconds
-    timer(0, environment.pingFrequency).subscribe(_ => {
+  constructor(pingService: PingService) {
+    this.init(pingService);
+  }
+
+  private init(pingService: PingService) {
+    // Creates a timer to ping every x seconds,
+    const emitter = timer(0, environment.pingFrequency);
+    // The service is a singleton (no need to unsubscribe)
+    emitter.subscribe(_ => {
       // Ping the stream and updates the subject
-      this.pingService.ping(environment.streamUrl).subscribe(result => {
+      pingService.ping(environment.streamUrl).subscribe(result => {
         this.isAlive.next(result);
       });
     });

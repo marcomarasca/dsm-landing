@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { environment } from '../../environments/environment';
 import { StreamService } from './stream.service';
 import { BehaviorSubject } from 'rxjs';
 
@@ -9,10 +8,9 @@ import { BehaviorSubject } from 'rxjs';
   styleUrls: ['./live.component.scss']
 })
 export class LiveComponent {
-  stream: string = environment.streamUrl;
-  isAlive: BehaviorSubject<boolean> = new BehaviorSubject(false);
+  isAlive: BehaviorSubject<boolean>;
 
-  constructor(private streamService: StreamService) {
+  constructor(streamService: StreamService) {
     this.isAlive = streamService.isAlive;
   }
 
