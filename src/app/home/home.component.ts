@@ -1,7 +1,5 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Component } from '@angular/core';
 import { APP_LIST, IApplication } from './../application';
-import { StreamService } from '../live/stream.service';
-import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-home',
@@ -9,27 +7,8 @@ import { Subscription } from 'rxjs';
   styleUrls: ['./home.component.scss']
 })
 
-export class HomeComponent implements OnInit, OnDestroy {
+export class HomeComponent {
 
   apps: IApplication[] = APP_LIST;
-  private streamServiceSub: Subscription;
 
-  constructor(private streamService: StreamService) { }
-
-  ngOnInit(): void {
-    const liveApp = this.apps.filter(app => app.name === 'Live')[0];
-
-    if (liveApp) {
-      // Uses the stream service subject to get the current value
-      this.streamServiceSub = this.streamService.isAlive.subscribe(isAlive => {
-        liveApp.disabled = !isAlive;
-      });
-    }
-  }
-
-  ngOnDestroy(): void {
-    if (this.streamServiceSub) {
-      this.streamServiceSub.unsubscribe();
-    }
-  }
 }

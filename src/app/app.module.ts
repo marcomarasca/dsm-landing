@@ -11,7 +11,7 @@ import { LiveComponent } from './live/live.component';
 import { HomeComponent } from './home/home.component';
 import { VgCoreModule } from 'videogular2/core';
 import { VgStreamingModule } from 'videogular2/streaming';
-import { StreamService } from './live/stream.service';
+// import { StreamService } from './live/stream.service';
 
 @NgModule({
   declarations: [
@@ -29,7 +29,6 @@ import { StreamService } from './live/stream.service';
     VgCoreModule,
     VgStreamingModule
   ],
-  providers: [StreamService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

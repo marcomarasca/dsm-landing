@@ -37,27 +37,4 @@ describe('HomeComponent', () => {
     expect(compiled.querySelectorAll('app-button').length).toBe(1);
   });
 
-  it('should only not subscribe to the stream service when not live app is available', () => {
-    let fixture = TestBed.createComponent(HomeComponent);
-    let component = fixture.componentInstance;
-    component.apps = [
-      {name: 'Test', route: 'redirect', url: 'test', icon: 'test'}
-    ];
-    fixture.detectChanges();
-    expect(component['streamServiceSub']).toBeUndefined();
-  });
-
-  it('should set the live component disabled status', () => {
-    let fixture = TestBed.createComponent(HomeComponent);
-    let component = fixture.componentInstance;
-    component.apps = [
-      {name: 'Live', route: 'live', icon: 'live'}
-    ];
-    fixture.detectChanges();
-    expect(component['streamServiceSub']).toBeTruthy();
-    expect(component.apps[0].disabled).toBeTruthy();
-    const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelectorAll('app-button').length).toBe(1);
-  });
-
 });
