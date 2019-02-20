@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { StreamService } from './stream.service';
-import { BehaviorSubject } from 'rxjs';
+import { Observable } from 'rxjs';
 import { environment } from '../../environments/environment';
 
 @Component({
@@ -10,7 +10,7 @@ import { environment } from '../../environments/environment';
 })
 export class LiveComponent {
   stream: string;
-  isAlive: BehaviorSubject<boolean>;
+  isAlive: Observable<boolean>;
 
   constructor(streamService: StreamService) {
     this.stream = environment.streamUrl;

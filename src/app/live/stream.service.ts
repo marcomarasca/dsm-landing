@@ -8,7 +8,8 @@ import { environment } from '../../environments/environment';
 })
 export class StreamService {
 
-  isAlive: BehaviorSubject<boolean> = new BehaviorSubject(false);
+  private aliveSubject: BehaviorSubject<boolean> = new BehaviorSubject(false);
+  public isAlive = this.aliveSubject.asObservable();
 
   constructor(pingService: PingService) {
     this.init(pingService);
@@ -21,7 +22,7 @@ export class StreamService {
     emitter.subscribe(_ => {
       // Ping the stream and updates the subject
       pingService.ping(environment.streamUrl).subscribe(result => {
-        this.isAlive.next(result);
+        this.aliveSubject.next(result);
       });
     });
   }

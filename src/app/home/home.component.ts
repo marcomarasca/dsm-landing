@@ -18,13 +18,18 @@ export class HomeComponent implements OnInit, OnDestroy {
 
   ngOnInit(): void {
     const liveApp = this.apps.filter(app => app.name === 'Live')[0];
-    // Uses the stream service subject to get the current value
-    this.streamServiceSub = this.streamService.isAlive.subscribe(isAlive => {
-      liveApp.disabled = !isAlive;
-    });
+
+    if (liveApp) {
+      // Uses the stream service subject to get the current value
+      this.streamServiceSub = this.streamService.isAlive.subscribe(isAlive => {
+        liveApp.disabled = !isAlive;
+      });
+    }
   }
 
   ngOnDestroy(): void {
-    this.streamServiceSub.unsubscribe();
+    if (this.streamServiceSub) {
+      this.streamServiceSub.unsubscribe();
+    }
   }
 }
