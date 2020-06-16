@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { environment } from '../environments/environment';
-import { StreamService } from './live/stream.service';
 
 @Component({
   selector: 'app-root',
@@ -9,8 +8,7 @@ import { StreamService } from './live/stream.service';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  constructor(titleService: Title, streamService: StreamService) {
+  constructor(titleService: Title) {
     titleService.setTitle(environment.title);
-    streamService.init();
   }
 }

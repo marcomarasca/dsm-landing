@@ -29,7 +29,6 @@
             "styles": [
               "src/styles/styles.scss"
             ],
-            "scripts": ["./node_modules/hls.js/dist/hls.light.min.js"],
             "es5BrowserSupport": true
           },
           "configurations": {
@@ -87,7 +86,6 @@
             "styles": [
               "src/styles/styles.scss"
             ],
-            "scripts": ["./node_modules/hls.js/dist/hls.light.min.js"],
             "assets": [
               "src/favicon.ico",
               "src/assets"

@@ -1,6 +1,0 @@
-<vg-player *ngIf="isAlive | async" class="animated fadeIn">
-  <video [vgMedia]="media" #media [vgHls]="stream" id="stream" type="video/mp4" preload="auto" autoplay="true" controls></video>
-</vg-player>
-<div *ngIf="!(isAlive | async)"  class="animated fadeIn alert text-center" role="alert">
-  Stream not available, come back later! <a [routerLink]="[ '']">Go Home.</a>
-</div>

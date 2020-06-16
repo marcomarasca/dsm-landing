@@ -23,10 +23,8 @@
     "animate.css": "^3.7.0",
     "bootstrap": "^4.3.1",
     "core-js": "^2.5.4",
-    "hls.js": "^0.12.2",
     "rxjs": "~6.4.0",
     "tslib": "^1.9.0",
-    "videogular2": "^6.4.0",
     "zone.js": "~0.8.26"
   },
   "devDependencies": {
@@ -35,7 +33,6 @@
     "@angular/compiler-cli": "~7.2.0",
     "@angular/language-service": "~7.2.0",
     "@types/core-js": "^2.5.0",
-    "@types/hls.js": "^0.12.2",
     "@types/jasmine": "~2.8.8",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "~8.9.4",

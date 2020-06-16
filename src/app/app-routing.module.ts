@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes }  from '@angular/router';
 
-import { LiveComponent } from './live/live.component';
 import { HomeComponent } from './home/home.component';
 
 
@@ -23,7 +22,6 @@ export class RedirectGuard implements CanActivate {
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent, pathMatch: 'full', data: { name: 'Home'} },
-  { path: 'live', component: LiveComponent, data: { name: 'Live'} },
   { path: 'redirect', canActivate: [RedirectGuard], component: RedirectGuard, data: { name: 'Redirect' } },
   { path: '**', redirectTo: '', pathMatch: 'full' }
 ];
