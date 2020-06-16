@@ -3,23 +3,20 @@
 @import '~src/styles/mixins';
 
 .btn-container {
-  @include make-row();
-
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
   margin-right: 0;
   margin-left: 0;
-
-  > .col,
-  > [class*="col-"] {
-    padding-right: 0;
-    padding-left: 0;
-  }
+  padding-right: 0;
+  padding-left: 0;
 
   @for $i from 1 through length($btn-colors) {
     app-button:nth-child(#{length($btn-colors)}n+#{$i}) {
       @include color-btn(nth($btn-colors, $i));
+      &::ng-deep .name {
+        color: invert(nth($btn-colors, $i)) !important;
+      }
     }
   }
-
 }
-
-
