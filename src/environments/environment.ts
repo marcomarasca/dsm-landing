@@ -4,9 +4,8 @@
 
 export const environment = {
   production: false,
-  title: 'Hedgy Cloud',
-  baseUrl: 'https://hedgycloud.synology.me',
-  streamUrl: 'http://localhost:8080/hls/gopro.m3u8',
+  title: 'My Nas',
+  baseUrl: '.xxx.synology.me',
   pingTimeout: 2000,
   pingFrequency: 3000
 };

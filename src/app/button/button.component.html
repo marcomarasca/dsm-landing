@@ -1,6 +1,6 @@
-<a [class.disabled]="app.disabled" class="btn" [routerLink]="[ app.route ]" [queryParams]="{ url: app.url}" role="button">
+<a [class.disabled]="app.disabled" class="btn" target="_blank" href="{{ app.url }}" role="button">
   <span class="icon"><i class="fas fa-{{app.icon}} fa-2x"></i></span>
   <span>{{app.name}}</span>
   <i *ngIf="app.disabled" class="icon-disabled fas fa-slash fa-2x"></i>
-  <i *ngIf="!app.disabled && app.route === 'redirect'" class="icon-redirect fas fa-external-link-alt"></i>
+  <i *ngIf="!app.disabled" class="icon-redirect fas fa-external-link-alt"></i>
 </a>
