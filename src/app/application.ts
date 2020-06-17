@@ -2,19 +2,19 @@ export interface IApplication {
   name: string;
   icon: string;
   url: string;
-  isNas: boolean
-  disabled?: boolean;
+  localUrl?: string;
+  isAdmin: boolean;
 }
 
 export const APP_LIST: IApplication[] = [
-  { name: 'AllMovies', icon: 'ticket-alt', url: 'movies', isNas: true },
-  { name: 'NgMusic', icon: 'music', url: 'ngmusic', isNas: true },
-  { name: 'Admin', icon: 'cogs', url: ':5001', isNas: true },
-  { name: 'Deluge', icon: 'download', url: 'deluge', isNas: true },
-  { name: 'File', icon: 'file-alt', url: '/file', isNas: true },
-  { name: 'Cook', icon: 'cookie', url: 'http://69pmb.github.io/Cook', isNas: false },
-  { name: 'DotFiles', icon: 'code', url: 'http://69pmb.github.io/DotFiles', isNas: false },
-  { name: 'Radarr', icon: 'film', url: 'radarr', isNas: true },
-  { name: 'Sonarr', icon: 'tv', url: 'sonarr', isNas: true },
-  { name: 'Bazarr', icon: 'closed-captioning', url: 'bazarr', isNas: true },
+  { name: 'AllMovies', icon: 'ticket-alt', url: 'allmovies', isAdmin: false, localUrl: '7575' },
+  { name: 'NgMusic', icon: 'music', url: 'ngmusic', isAdmin: false, localUrl: '2525' },
+  { name: 'Admin', icon: 'cogs', url: 'admin', isAdmin: true, localUrl: '5001' },
+  { name: 'Deluge', icon: 'download', url: 'deluge', isAdmin: false, localUrl: '8112' },
+  { name: 'File', icon: 'file-alt', url: 'file', isAdmin: true, localUrl: '7001' },
+  { name: 'Cook', icon: 'cookie', url: 'https://69pmb.github.io/Cook', isAdmin: false },
+  { name: 'DotFiles', icon: 'code', url: 'https://69pmb.github.io/DotFiles', isAdmin: false },
+  { name: 'Radarr', icon: 'film', url: 'radarr', isAdmin: false, localUrl: '8310' },
+  { name: 'Sonarr', icon: 'tv', url: 'sonarr', isAdmin: false, localUrl: '8989' },
+  { name: 'Bazarr', icon: 'closed-captioning', url: 'bazarr', isAdmin: false, localUrl: '6767' },
 ];
