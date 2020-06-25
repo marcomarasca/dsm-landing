@@ -11,6 +11,7 @@ export const APP_LIST: IApplication[] = [
   { name: 'NgMusic', icon: 'music', url: 'ngmusic', isAdmin: false, localUrl: '2525' },
   { name: 'Admin', icon: 'cogs', url: 'admin', isAdmin: true, localUrl: '5001' },
   { name: 'Deluge', icon: 'download', url: 'deluge', isAdmin: false, localUrl: '8112' },
+  { name: 'Moments', icon: 'atom', url: 'moments', isAdmin: true, localUrl: '10005' },
   { name: 'File', icon: 'file-alt', url: 'file', isAdmin: true, localUrl: '7001' },
   { name: 'Cook', icon: 'cookie', url: 'https://69pmb.github.io/Cook', isAdmin: false },
   { name: 'DotFiles', icon: 'code', url: 'https://69pmb.github.io/DotFiles', isAdmin: false },
