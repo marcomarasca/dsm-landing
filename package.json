@@ -22,10 +22,10 @@
     "@angular/router": "~10.2.0",
     "@fortawesome/fontawesome-free": "^5.15.1",
     "@videogular/ngx-videogular": "^2.1.0",
-    "animate.css": "^3.7.2",
+    "animate.css": "^4.1.1",
     "bootstrap": "^4.5.3",
-    "core-js": "^2.6.11",
-    "hls.js": "^0.12.4",
+    "core-js": "^3.6.5",
+    "hls.js": "^0.14.16",
     "rxjs": "~6.6.3",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.2"
