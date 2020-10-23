@@ -9,8 +9,8 @@ import { ButtonComponent } from './button/button.component';
 import { AppRoutingModule } from './app-routing.module';
 import { LiveComponent } from './live/live.component';
 import { HomeComponent } from './home/home.component';
-import { VgCoreModule } from 'videogular2/compiled/core';
-import { VgStreamingModule } from 'videogular2/compiled/streaming';
+import { VgCoreModule } from '@videogular/ngx-videogular/core';
+import { VgStreamingModule } from '@videogular/ngx-videogular/streaming';
 
 @NgModule({
   declarations: [
