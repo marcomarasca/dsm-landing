@@ -3,14 +3,14 @@
 
 :host {
 
-  min-width: 10em;
-  height: 10em;
+  min-width: 9em;
+  height: 9em;
   transition: height .3s, background-color .3s, opacity .3s;
 
   @include media-breakpoint-up(lg) {
 
     &:not(.disabled):hover {
-      height: 11em;
+      height: 9.5em;
     }
 
   }
@@ -35,7 +35,7 @@ a {
 
     @include media-breakpoint-up(lg) {
       .icon + span {
-        margin-top: 3.1em;
+        margin-top: 1.6em;
         transition: margin 0.3s;
       }
     }
@@ -56,7 +56,7 @@ a {
   }
 
   .icon + span {
-    margin-top: 2.1em;
+    margin-top: 1.1em;
     transition: margin 0.3s;
   }
 
