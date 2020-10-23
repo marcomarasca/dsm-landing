@@ -30,8 +30,9 @@
             "styles": [
               "src/styles/styles.scss"
             ],
-            "scripts": ["./node_modules/hls.js/dist/hls.light.min.js"],
-            "es5BrowserSupport": true
+            "scripts": [
+              "./node_modules/hls.js/dist/hls.light.min.js"
+            ]
           },
           "configurations": {
             "production": {
