@@ -29,7 +29,7 @@ const appRoutes: Routes = [
 @NgModule({
   declarations: [],
   imports: [
-    RouterModule.forRoot(appRoutes, { useHash: true })
+    RouterModule.forRoot(appRoutes, { useHash: true, relativeLinkResolution: 'legacy' })
   ],
   exports: [
     RouterModule
