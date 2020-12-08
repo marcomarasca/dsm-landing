@@ -135,5 +135,8 @@
       }
     }
   },
-  "defaultProject": "dsm-landing"
+  "defaultProject": "dsm-landing",
+  "cli": {
+    "analytics": false
+  }
 }
