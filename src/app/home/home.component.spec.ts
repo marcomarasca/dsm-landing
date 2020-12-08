@@ -1,34 +1,27 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { ButtonComponent } from '../button/button.component';
-import { HomeComponent } from './home.component';
+import { async, TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 
-import { StreamService } from '../live/stream.service';
-import { BehaviorSubject } from 'rxjs';
+import { ButtonComponent } from '../button/button.component';
+import { HomeComponent } from './home.component';
 
 describe('HomeComponent', () => {
-  let streamServiceStub: Partial<StreamService> = {
-    isAlive: new BehaviorSubject(false).asObservable()
-  }
-
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       imports: [RouterTestingModule],
-      declarations: [ButtonComponent, HomeComponent],
-      providers: [{ provide: StreamService, useValue: streamServiceStub }]
+      declarations: [ButtonComponent, HomeComponent]
     })
       .compileComponents();
   }));
 
   it('should create', () => {
-    let fixture = TestBed.createComponent(HomeComponent);
-    let component = fixture.componentInstance;
+    const fixture = TestBed.createComponent(HomeComponent);
+    const component = fixture.componentInstance;
     expect(component).toBeTruthy();
   });
 
   it('should only create the apps in the list', () => {
-    let fixture = TestBed.createComponent(HomeComponent);
-    let component = fixture.componentInstance;
+    const fixture = TestBed.createComponent(HomeComponent);
+    const component = fixture.componentInstance;
     component.apps = [
       {name: 'Test', route: 'redirect', url: 'test', icon: 'test'}
     ];

@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes }  from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 
 import { HomeComponent } from './home/home.component';
 
 
-import {Injectable} from '@angular/core';
-import {CanActivate, ActivatedRouteSnapshot, RouterStateSnapshot} from '@angular/router';
+import { Injectable } from '@angular/core';
+import { CanActivate, ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
 
 @Injectable({
   providedIn: 'root',
@@ -21,7 +21,7 @@ export class RedirectGuard implements CanActivate {
 }
 
 const appRoutes: Routes = [
-  { path: '', component: HomeComponent, pathMatch: 'full', data: { name: 'Home'} },
+  { path: '', component: HomeComponent, pathMatch: 'full', data: { name: 'Home' } },
   { path: 'redirect', canActivate: [RedirectGuard], component: RedirectGuard, data: { name: 'Redirect' } },
   { path: '**', redirectTo: '', pathMatch: 'full' }
 ];

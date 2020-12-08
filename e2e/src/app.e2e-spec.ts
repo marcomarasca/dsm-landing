@@ -14,7 +14,7 @@ describe('workspace-project App', () => {
 
   it('should display welcome message', () => {
     page.navigateTo();
-    let title = 'Welcome to ' + environment.title + '!';
+    const title = 'Welcome to ' + environment.title + '!';
     expect(page.getTitleText()).toEqual(title);
   });
 
