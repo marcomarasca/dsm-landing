@@ -125,13 +125,6 @@
     ora "5.1.0"
     rxjs "6.6.3"
 
-"@angular/animations@~11.0.3":
-  version "11.0.3"
-  resolved "https://registry.yarnpkg.com/@angular/animations/-/animations-11.0.3.tgz#e93b7cf2b7c797eb1749dbb2894f4181e9bb7ec6"
-  integrity sha512-v0oBfa3Mvnihpbo59bfJw6YwkGYTf6nLVYyKWx2w8pBO3G3ycBAqDqHtDkSBIr13Rq+lSbCgOtrjWxDPLAn9Ig==
-  dependencies:
-    tslib "^2.0.0"
-
 "@angular/cli@~11.0.3":
   version "11.0.3"
   resolved "https://registry.yarnpkg.com/@angular/cli/-/cli-11.0.3.tgz#58c48b7976289a6fbd2eeb8464ae5dbe0468e306"
@@ -207,13 +200,6 @@
   version "11.0.3"
   resolved "https://registry.yarnpkg.com/@angular/core/-/core-11.0.3.tgz#3c85d6bb9e899f35a35f4a435f8c37bc6529160a"
   integrity sha512-bxo5euE7+Q2ThowkVRwwvKyF5vQEyo9V14JM3GW8k2THbk7LfNctyNkTeuvkTBWfLF17Nd7b5+BdNttNKNlCuQ==
-  dependencies:
-    tslib "^2.0.0"
-
-"@angular/forms@~11.0.3":
-  version "11.0.3"
-  resolved "https://registry.yarnpkg.com/@angular/forms/-/forms-11.0.3.tgz#9fac6a5a2107ba8c5b0a57709a8f2bf8485e41ed"
-  integrity sha512-r0ntMYQq/P4mA2Cnryt6Zh2jJHgeKX/IN4ulCxKl59oxC1NskIfbIMk3UNHvCSFpsrzgKl6Btqyf+RYIc3kIxA==
   dependencies:
     tslib "^2.0.0"
 
@@ -1531,11 +1517,6 @@ alphanum-sort@^1.0.0:
   resolved "https://registry.yarnpkg.com/alphanum-sort/-/alphanum-sort-1.0.2.tgz#97a1119649b211ad33691d9f9f486a8ec9fbe0a3"
   integrity sha1-l6ERlkmyEa0zaR2fn0hqjsn74KM=
 
-animate.css@^3.7.2:
-  version "3.7.2"
-  resolved "https://registry.yarnpkg.com/animate.css/-/animate.css-3.7.2.tgz#e73e0d50e92cb1cfef1597d9b38a9481020e08ea"
-  integrity sha512-0bE8zYo7C0KvgOYrSVfrzkbYk6IOTVPNqkiHg2cbyF4Pq/PXzilz4BRWA3hwEUBoMp5VBgrC29lQIZyhRWdBTw==
-
 ansi-colors@4.1.1:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/ansi-colors/-/ansi-colors-4.1.1.tgz#cbb9ae256bf750af1eab344f229aa27fe94ba348"
@@ -2240,9 +2221,9 @@ caniuse-api@^3.0.0:
     lodash.uniq "^4.5.0"
 
 caniuse-lite@^1.0.0, caniuse-lite@^1.0.30001032, caniuse-lite@^1.0.30001109, caniuse-lite@^1.0.30001164:
-  version "1.0.30001165"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001165.tgz#32955490d2f60290bb186bb754f2981917fa744f"
-  integrity sha512-8cEsSMwXfx7lWSUMA2s08z9dIgsnR5NAqjXP23stdsU3AUWkCr/rr4s4OFtHXn5XXr6+7kam3QFVoYyXNPdJPA==
+  version "1.0.30001270"
+  resolved "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001270.tgz"
+  integrity sha512-TcIC7AyNWXhcOmv2KftOl1ShFAaHQYcB/EPL/hEyMrcS7ZX0/DvV1aoy6BzV0+16wTpoAyTMGDNAJfSqS/rz7A==
 
 canonical-path@1.0.0:
   version "1.0.0"
@@ -7305,7 +7286,7 @@ run-queue@^1.0.0, run-queue@^1.0.3:
   dependencies:
     aproba "^1.1.1"
 
-rxjs@6.6.3, rxjs@^6.5.3, rxjs@^6.6.0, rxjs@~6.6.3:
+rxjs@6.6.3, rxjs@^6.5.3, rxjs@^6.6.0:
   version "6.6.3"
   resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-6.6.3.tgz#8ca84635c4daa900c0d3967a6ee7ac60271ee552"
   integrity sha512-trsQc+xYYXZ3urjOiJOuCOa5N3jAZ3eiSpQB5hIT8zGlL2QfnHLJ2r7GMkBGuIausdJN1OneaI6gQlsqNHHmZQ==

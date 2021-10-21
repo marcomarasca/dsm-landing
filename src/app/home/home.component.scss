@@ -1,6 +1,6 @@
 @import '~bootstrap/scss/bootstrap-grid';
-@import '~src/styles/variables';
-@import '~src/styles/mixins';
+@import '/src/styles/variables';
+@import '/src/styles/mixins';
 
 .btn-container {
   display: flex;
@@ -19,4 +19,13 @@
       }
     }
   }
+}
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.fadeIn {
+  animation-name: fadeIn;
 }
