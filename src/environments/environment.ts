@@ -4,10 +4,8 @@
 
 export const environment = {
   production: false,
-  title: 'My Nas',
-  baseUrl: '.xxx.synology.me',
-  pingTimeout: 2000,
-  pingFrequency: 3000
+  baseUrl: window["env"]["baseUrl"] || "xxx",
+  title: window["env"]["title"] || "xxx"
 };
 
 /*

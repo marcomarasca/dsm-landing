@@ -5,6 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build --prod --progress false",
+    "docker": "yarn build --output-path docker/dist/",
     "test": "ng test",
     "lint": "ng lint",
     "postinstall": "ngcc",

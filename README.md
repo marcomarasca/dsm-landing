@@ -33,6 +33,23 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build (which will automatically use the [environment.prod.ts](./src/environments/environment.prod.ts) configuration file).
 
+## Docker deployment
+
+Once built the project, you can start a Docker container using:
+```bash
+docker run --name dsm-landing -d -v /path/to/dsm-landing/dist:/usr/share/nginx/html -t pmb69/ng-nginx:0.1.0
+```
+
 ## Running unit tests
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+
+## Deployment
+
+You can deploy the app using docker with the following commands:  
+```bash
+docker run -e TITLE="Welcome to my landing page" -e BASE_URL=.my.domain.com -d -p 8080:8080 -t pmb69/dsm-landing:0.1.0
+```
+
+The landing page is now available at `localhost:8080`
+
